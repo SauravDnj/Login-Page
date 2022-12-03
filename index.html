@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="CSS/style.css">
+</head>
+<body>
+    
+    <div class="container">
+
+        <nav class="navbar">
+            <ul>
+                <li class="item"><a href="/home.html">Home</a></li>
+                <li class="item"><a href="/about.html">About</a></li>
+                <li class="item"><a href="/serveices.html">Services</a></li>
+                <li class="item"><a href="/contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+
+        <div class="form-box">
+            <div class="button-box">
+                <div id="btn"></div>
+                <input type="button" class="btn" value="Log In" onclick="login()">
+                <input type="button" class="btn" value="Register" onclick="register()">
+            </div>
+
+            <div class="icon">
+                <a href="insta_link.html"><img src="CSS/insta.jfif" alt="Instagram"></a>
+                <a href="whatsapp_link.html"><img src="CSS/whatsapp.jfif" alt="WhatsApp"></a>
+                <a href="hp_link.html"><img src="CSS/hp.png" alt="HP"></a>
+            </div>
+
+            <form action="#" id="login" class="input-group">
+                <input type="text" name="user_id" class="input" placeholder="User Id" autocomplete="off" required>
+
+                <input type="password" name="password" class="input" placeholder="Enter Password" autocomplete="off" autocomplete="off" required>
+
+                <input type="checkbox" name="show" class="check-box"> <span>Show Password</span>
+
+                <!-- <input type="submit" value="Log In" class="submit-btn"> -->
+                <button class="submit-btn"><a href="home.html">Log In</a></button>
+            </form>
+            
+            <form action="#" id="register" class="input-group">
+                <input type="text" name="user_id" class="input" placeholder="User Id" autocomplete="off" required>
+                
+                <input type="email" name="email" class="input" placeholder="Email Id" autocomplete="off" required>
+                
+                <input type="password" name="password" class="input" placeholder="Enter Password" autocomplete="off" required>
+                
+                <input type="checkbox" name="show" class="check-box"> <span>I Agree To The Terms & Conditions</span>
+                
+                <!-- <input type="submit" value="Register" class="submit-btn"> -->
+                <button class="submit-btn"><a href="home.html">Register</a></button>
+            </form>
+        </div>
+    </div>
+
+    <script src="JS/javascript.js"></script>
+
+</body>
+</html>
